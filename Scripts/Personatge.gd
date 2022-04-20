@@ -7,7 +7,7 @@ var gravetat = Vector2.DOWN * 980
 var velocitat_salt = -500
 
 func _ready():
-	position = Vector2(25, 390)
+	pass
 
 func _physics_process(delta):
 	velocitat.x = 0
