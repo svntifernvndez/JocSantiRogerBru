@@ -11,7 +11,7 @@
 [ext_resource path="res://Grafics/2 GraveRobber/GraveRobber_idle.png" type="Texture" id=9]
 [ext_resource path="res://Grafics/2 GraveRobber/GraveRobber_attack2.png" type="Texture" id=10]
 [ext_resource path="res://Grafics/2 GraveRobber/GraveRobber_death.png" type="Texture" id=11]
-[ext_resource path="res://Scripts/Personatge.gd" type="Script" id=12]
+[ext_resource path="res://Nodes/Personatgeinici.gd" type="Script" id=12]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 8, 16.5 )
@@ -332,8 +332,8 @@ animation = "salta"
 frame = 5
 playing = true
 
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2( 76, -14 )
-current = true
-limit_top = 0
-limit_bottom = 600
+[node name="Timer" type="Timer" parent="."]
+wait_time = 5.0
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
