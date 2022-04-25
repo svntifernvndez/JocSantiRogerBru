@@ -1,0 +1,132 @@
+[gd_scene load_steps=66 format=2]
+
+[ext_resource path="res://Grafics/_02/03-Attack/__Bandit02_Attack_001.png" type="Texture" id=1]
+[ext_resource path="res://Grafics/_02/05-JumpUp/__Bandit02_JumpUP_003.png" type="Texture" id=2]
+[ext_resource path="res://Grafics/_02/05-JumpUp/__Bandit02_JumpUP_002.png" type="Texture" id=3]
+[ext_resource path="res://Grafics/_02/05-JumpUp/__Bandit02_JumpUP_004.png" type="Texture" id=4]
+[ext_resource path="res://Grafics/_02/03-Attack/__Bandit02_Attack_004.png" type="Texture" id=5]
+[ext_resource path="res://Grafics/_02/03-Attack/__Bandit02_Attack_006.png" type="Texture" id=6]
+[ext_resource path="res://Grafics/_02/03-Attack/__Bandit02_Attack_003.png" type="Texture" id=7]
+[ext_resource path="res://Grafics/_02/03-Attack/__Bandit02_Attack_005.png" type="Texture" id=8]
+[ext_resource path="res://Grafics/_02/05-JumpUp/__Bandit02_JumpUP_000.png" type="Texture" id=9]
+[ext_resource path="res://Grafics/_02/03-Attack/__Bandit02_Attack_002.png" type="Texture" id=10]
+[ext_resource path="res://Grafics/_02/05-JumpUp/__Bandit02_JumpUP_001.png" type="Texture" id=11]
+[ext_resource path="res://Grafics/_02/05-JumpUp/__Bandit02_JumpUP_005.png" type="Texture" id=12]
+[ext_resource path="res://Grafics/_02/05-JumpUp/__Bandit02_JumpUP_006.png" type="Texture" id=13]
+[ext_resource path="res://Grafics/_02/05-JumpUp/__Bandit02_JumpUP_007.png" type="Texture" id=14]
+[ext_resource path="res://Grafics/_02/06-FallDown/__Bandit02_FallDown_000.png" type="Texture" id=15]
+[ext_resource path="res://Grafics/_02/03-Attack/__Bandit02_Attack_007.png" type="Texture" id=16]
+[ext_resource path="res://Grafics/_02/03-Attack/__Bandit02_Attack_000.png" type="Texture" id=17]
+[ext_resource path="res://Grafics/_02/08-Die/__Bandit02_Die_006.png" type="Texture" id=18]
+[ext_resource path="res://Grafics/_02/08-Die/__Bandit02_Die_007.png" type="Texture" id=19]
+[ext_resource path="res://Grafics/_02/08-Die/__Bandit02_Die_004.png" type="Texture" id=20]
+[ext_resource path="res://Grafics/_02/08-Die/__Bandit02_Die_002.png" type="Texture" id=21]
+[ext_resource path="res://Grafics/_02/08-Die/__Bandit02_Die_003.png" type="Texture" id=22]
+[ext_resource path="res://Grafics/_02/08-Die/__Bandit02_Die_005.png" type="Texture" id=23]
+[ext_resource path="res://Grafics/_02/06-FallDown/__Bandit02_FallDown_002.png" type="Texture" id=24]
+[ext_resource path="res://Grafics/_02/06-FallDown/__Bandit02_FallDown_003.png" type="Texture" id=25]
+[ext_resource path="res://Grafics/_02/06-FallDown/__Bandit02_FallDown_006.png" type="Texture" id=26]
+[ext_resource path="res://Grafics/_02/06-FallDown/__Bandit02_FallDown_007.png" type="Texture" id=27]
+[ext_resource path="res://Grafics/_02/07-Hurt/__Bandit02_Hurt_001.png" type="Texture" id=28]
+[ext_resource path="res://Grafics/_02/07-Hurt/__Bandit02_Hurt_003.png" type="Texture" id=29]
+[ext_resource path="res://Grafics/_02/06-FallDown/__Bandit02_FallDown_004.png" type="Texture" id=30]
+[ext_resource path="res://Grafics/_02/07-Hurt/__Bandit02_Hurt_000.png" type="Texture" id=31]
+[ext_resource path="res://Grafics/_02/07-Hurt/__Bandit02_Hurt_002.png" type="Texture" id=32]
+[ext_resource path="res://Grafics/_02/07-Hurt/__Bandit02_Hurt_005.png" type="Texture" id=33]
+[ext_resource path="res://Grafics/_02/07-Hurt/__Bandit02_Hurt_006.png" type="Texture" id=34]
+[ext_resource path="res://Grafics/_02/07-Hurt/__Bandit02_Hurt_007.png" type="Texture" id=35]
+[ext_resource path="res://Grafics/_02/07-Hurt/__Bandit02_Hurt_004.png" type="Texture" id=36]
+[ext_resource path="res://Grafics/_02/08-Die/__Bandit02_Die_000.png" type="Texture" id=37]
+[ext_resource path="res://Grafics/_02/08-Die/__Bandit02_Die_001.png" type="Texture" id=38]
+[ext_resource path="res://Grafics/_02/06-FallDown/__Bandit02_FallDown_001.png" type="Texture" id=39]
+[ext_resource path="res://Grafics/_02/06-FallDown/__Bandit02_FallDown_005.png" type="Texture" id=40]
+[ext_resource path="res://Grafics/_02/01-Idle/__Bandit02_Idle_010.png" type="Texture" id=41]
+[ext_resource path="res://Grafics/_02/02-Walk/__Bandit02_Walk_000.png" type="Texture" id=42]
+[ext_resource path="res://Grafics/_02/02-Walk/__Bandit02_Walk_001.png" type="Texture" id=43]
+[ext_resource path="res://Grafics/_02/02-Walk/__Bandit02_Walk_006.png" type="Texture" id=44]
+[ext_resource path="res://Grafics/_02/02-Walk/__Bandit02_Walk_004.png" type="Texture" id=45]
+[ext_resource path="res://Grafics/_02/01-Idle/__Bandit02_Idle_009.png" type="Texture" id=46]
+[ext_resource path="res://Grafics/_02/01-Idle/__Bandit02_Idle_005.png" type="Texture" id=47]
+[ext_resource path="res://Grafics/_02/01-Idle/__Bandit02_Idle_008.png" type="Texture" id=48]
+[ext_resource path="res://Grafics/_02/02-Walk/__Bandit02_Walk_002.png" type="Texture" id=49]
+[ext_resource path="res://Grafics/_02/01-Idle/__Bandit02_Idle_006.png" type="Texture" id=50]
+[ext_resource path="res://Grafics/_02/01-Idle/__Bandit02_Idle_007.png" type="Texture" id=51]
+[ext_resource path="res://Grafics/_02/02-Walk/__Bandit02_Walk_003.png" type="Texture" id=52]
+[ext_resource path="res://Grafics/_02/01-Idle/__Bandit02_Idle_004.png" type="Texture" id=53]
+[ext_resource path="res://Grafics/_02/01-Idle/__Bandit02_Idle_011.png" type="Texture" id=54]
+[ext_resource path="res://Grafics/_02/02-Walk/__Bandit02_Walk_005.png" type="Texture" id=55]
+[ext_resource path="res://Grafics/_02/01-Idle/__Bandit02_Idle_003.png" type="Texture" id=56]
+[ext_resource path="res://Grafics/_02/02-Walk/__Bandit02_Walk_007.png" type="Texture" id=57]
+[ext_resource path="res://Grafics/_02/01-Idle/__Bandit02_Idle_000.png" type="Texture" id=58]
+[ext_resource path="res://Grafics/_02/01-Idle/__Bandit02_Idle_001.png" type="Texture" id=59]
+[ext_resource path="res://Grafics/_02/01-Idle/__Bandit02_Idle_002.png" type="Texture" id=60]
+[ext_resource path="res://Nodes/Enemic.gd" type="Script" id=61]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 58 ), ExtResource( 59 ), ExtResource( 60 ), ExtResource( 56 ), ExtResource( 53 ), ExtResource( 47 ), ExtResource( 50 ), ExtResource( 51 ), ExtResource( 48 ), ExtResource( 46 ), ExtResource( 41 ), ExtResource( 54 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 17 ), ExtResource( 1 ), ExtResource( 10 ), ExtResource( 7 ), ExtResource( 5 ), ExtResource( 8 ), ExtResource( 6 ), ExtResource( 16 ) ],
+"loop": true,
+"name": "ataca",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 9 ), ExtResource( 11 ), ExtResource( 3 ), ExtResource( 2 ), ExtResource( 4 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ) ],
+"loop": true,
+"name": "salta",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 42 ), ExtResource( 43 ), ExtResource( 49 ), ExtResource( 52 ), ExtResource( 45 ), ExtResource( 55 ), ExtResource( 44 ), ExtResource( 57 ) ],
+"loop": true,
+"name": "camina",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 15 ), ExtResource( 39 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 30 ), ExtResource( 40 ), ExtResource( 26 ), ExtResource( 27 ) ],
+"loop": true,
+"name": "cau",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 31 ), ExtResource( 28 ), ExtResource( 32 ), ExtResource( 29 ), ExtResource( 36 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ) ],
+"loop": true,
+"name": "danya",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 37 ), ExtResource( 38 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 20 ), ExtResource( 23 ), ExtResource( 18 ), ExtResource( 19 ) ],
+"loop": true,
+"name": "mor",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 52, 180.5 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 52.5, 118.125 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 25.5254, 111.965 )
+
+[node name="KinematicBody2D" type="KinematicBody2D"]
+scale = Vector2( 0.3, 0.3 )
+script = ExtResource( 61 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 1 )
+animation = "camina"
+frame = 3
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 42, -29.5 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2( -59.5, -89.875 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="."]
+position = Vector2( 120.475, -91.965 )
+shape = SubResource( 4 )
