@@ -11,7 +11,7 @@
 [ext_resource path="res://Grafics/2 GraveRobber/GraveRobber_idle.png" type="Texture" id=9]
 [ext_resource path="res://Grafics/2 GraveRobber/GraveRobber_attack2.png" type="Texture" id=10]
 [ext_resource path="res://Grafics/2 GraveRobber/GraveRobber_death.png" type="Texture" id=11]
-[ext_resource path="res://Nodes/Personatgeinici.gd" type="Script" id=12]
+[ext_resource path="res://Scripts/Personatgeinici.gd" type="Script" id=12]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 8, 16.5 )
@@ -54,30 +54,6 @@ region = Rect2( 192, 0, 48, 48 )
 
 [sub_resource type="AtlasTexture" id=35]
 atlas = ExtResource( 6 )
-region = Rect2( 240, 0, 48, 48 )
-
-[sub_resource type="AtlasTexture" id=57]
-atlas = ExtResource( 5 )
-region = Rect2( 0, 0, 48, 48 )
-
-[sub_resource type="AtlasTexture" id=58]
-atlas = ExtResource( 5 )
-region = Rect2( 48, 0, 48, 48 )
-
-[sub_resource type="AtlasTexture" id=59]
-atlas = ExtResource( 5 )
-region = Rect2( 96, 0, 48, 48 )
-
-[sub_resource type="AtlasTexture" id=60]
-atlas = ExtResource( 5 )
-region = Rect2( 144, 0, 48, 48 )
-
-[sub_resource type="AtlasTexture" id=61]
-atlas = ExtResource( 5 )
-region = Rect2( 192, 0, 48, 48 )
-
-[sub_resource type="AtlasTexture" id=62]
-atlas = ExtResource( 5 )
 region = Rect2( 240, 0, 48, 48 )
 
 [sub_resource type="AtlasTexture" id=12]
@@ -126,6 +102,30 @@ region = Rect2( 192, 0, 48, 48 )
 
 [sub_resource type="AtlasTexture" id=29]
 atlas = ExtResource( 10 )
+region = Rect2( 240, 0, 48, 48 )
+
+[sub_resource type="AtlasTexture" id=57]
+atlas = ExtResource( 5 )
+region = Rect2( 0, 0, 48, 48 )
+
+[sub_resource type="AtlasTexture" id=58]
+atlas = ExtResource( 5 )
+region = Rect2( 48, 0, 48, 48 )
+
+[sub_resource type="AtlasTexture" id=59]
+atlas = ExtResource( 5 )
+region = Rect2( 96, 0, 48, 48 )
+
+[sub_resource type="AtlasTexture" id=60]
+atlas = ExtResource( 5 )
+region = Rect2( 144, 0, 48, 48 )
+
+[sub_resource type="AtlasTexture" id=61]
+atlas = ExtResource( 5 )
+region = Rect2( 192, 0, 48, 48 )
+
+[sub_resource type="AtlasTexture" id=62]
+atlas = ExtResource( 5 )
 region = Rect2( 240, 0, 48, 48 )
 
 [sub_resource type="AtlasTexture" id=36]
@@ -272,11 +272,6 @@ animations = [ {
 "name": "ataca1",
 "speed": 10.0
 }, {
-"frames": [ SubResource( 57 ), SubResource( 58 ), SubResource( 59 ), SubResource( 60 ), SubResource( 61 ), SubResource( 62 ) ],
-"loop": true,
-"name": "corre",
-"speed": 10.0
-}, {
 "frames": [ SubResource( 12 ), SubResource( 13 ), SubResource( 14 ), SubResource( 15 ), SubResource( 16 ), SubResource( 17 ) ],
 "loop": true,
 "name": "camina",
@@ -285,6 +280,11 @@ animations = [ {
 "frames": [ SubResource( 24 ), SubResource( 25 ), SubResource( 26 ), SubResource( 27 ), SubResource( 28 ), SubResource( 29 ) ],
 "loop": true,
 "name": "ataca2",
+"speed": 10.0
+}, {
+"frames": [ SubResource( 57 ), SubResource( 58 ), SubResource( 59 ), SubResource( 60 ), SubResource( 61 ), SubResource( 62 ) ],
+"loop": true,
+"name": "corre",
 "speed": 10.0
 }, {
 "frames": [ SubResource( 36 ), SubResource( 37 ), SubResource( 38 ), SubResource( 39 ), SubResource( 40 ), SubResource( 41 ) ],

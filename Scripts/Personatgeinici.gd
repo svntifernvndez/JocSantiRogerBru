@@ -7,16 +7,16 @@ var gravetat = Vector2.DOWN * 980
 var velocitat_salt = -500
 
 func _ready():
-	pass
+	velocitat.x = velocitat_base
 
 func _physics_process(delta):
-	velocitat.x = velocitat_base
+
 	velocitat += gravetat * delta
 	if position.x >= 1024:
-		position.x = 1024
 		velocitat = Vector2.LEFT * velocitat_base
+		position.x = 1023
 	if position.x <= 0:
-		position.x = 0
+		position.x = 1
 		velocitat = Vector2.RIGHT * velocitat_base
 	velocitat = move_and_slide(velocitat, Vector2.UP)
 	animation(velocitat)
