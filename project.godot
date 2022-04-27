@@ -11,6 +11,7 @@ config_version=4
 [application]
 
 config/name="JocSantiRogerBru"
+run/main_scene="res://Escenes/pantallainici.tscn"
 config/icon="res://Grafics/icon.png"
 
 [input]
