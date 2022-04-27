@@ -1,0 +1,35 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Nodes/Personatge.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Nodes/Fons_dia.tscn" type="PackedScene" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 516.5, 17.5 )
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Node2D" parent="." instance=ExtResource( 2 )]
+
+[node name="Personatge" parent="." instance=ExtResource( 1 )]
+position = Vector2( 512, 303 )
+scale = Vector2( 4, 4 )
+
+[node name="terra" type="Node2D" parent="."]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="terra"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="terra/StaticBody2D"]
+position = Vector2( 512.5, 595.5 )
+shape = SubResource( 1 )
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="terra"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="terra/StaticBody2D3"]
+position = Vector2( -510, 598 )
+shape = SubResource( 1 )
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="terra"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="terra/StaticBody2D2"]
+position = Vector2( 1546, 596 )
+shape = SubResource( 1 )
