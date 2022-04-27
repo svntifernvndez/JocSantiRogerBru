@@ -18,3 +18,11 @@ func _ready():
 
 func _on_TextureButton_pressed():
 	get_tree().change_scene("res://Escenes/prova.tscn")
+
+
+func _on_TextureButton_mouse_entered():
+	$TextureButton.set_stretch_mode(1.7)
+
+
+func _on_TextureButton_mouse_exited():
+	$TextureButton.set_stretch_mode(1.5)

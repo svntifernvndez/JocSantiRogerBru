@@ -3,7 +3,7 @@ extends KinematicBody2D
 var velocitat_base = 250 
 var velocitat = Vector2.ZERO
 var direccio = Vector2.DOWN
-var gravetat = Vector2.DOWN * 1150
+var gravetat = Vector2.DOWN * 1200
 var velocitat_salt = -600
 
 func _ready():
