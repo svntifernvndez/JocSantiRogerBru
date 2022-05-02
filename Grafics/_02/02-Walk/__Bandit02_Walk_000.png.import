@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/icon.png-ad063ea069f9c7019b259b75e95028d2.stex"
+path="res://.import/__Bandit02_Walk_000.png-73321fd0c2be93cab03cba936c7125d1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Grafics/icon.png"
-dest_files=[ "res://.import/icon.png-ad063ea069f9c7019b259b75e95028d2.stex" ]
+source_file="res://Grafics/_02/02-Walk/__Bandit02_Walk_000.png"
+dest_files=[ "res://.import/__Bandit02_Walk_000.png-73321fd0c2be93cab03cba936c7125d1.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
@@ -31,5 +31,5 @@ process/invert_color=false
 process/normal_map_invert_y=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0
