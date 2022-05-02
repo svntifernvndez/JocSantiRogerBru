@@ -1,10 +1,16 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Nodes/Personatge.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Nodes/Fons_dia.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Grafics/image-removebg-preview (1).png" type="Texture" id=3]
+[ext_resource path="res://Nodes/Blocs/a dalt dreta.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Nodes/Blocs/a dalt esquerra.tscn" type="PackedScene" id=5]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 516.5, 17.5 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 182.469, 295 )
 
 [node name="Node2D" type="Node2D"]
 
@@ -14,22 +20,63 @@ extents = Vector2( 516.5, 17.5 )
 position = Vector2( 512, 303 )
 scale = Vector2( 3, 3 )
 
-[node name="terra" type="Node2D" parent="."]
+[node name="Terra" type="Node2D" parent="."]
 
-[node name="StaticBody2D" type="StaticBody2D" parent="terra"]
+[node name="StaticBody2D" type="StaticBody2D" parent="Terra"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="terra/StaticBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Terra/StaticBody2D"]
 position = Vector2( 512.5, 615 )
 shape = SubResource( 1 )
 
-[node name="StaticBody2D3" type="StaticBody2D" parent="terra"]
+[node name="StaticBody2D3" type="StaticBody2D" parent="Terra"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="terra/StaticBody2D3"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Terra/StaticBody2D3"]
 position = Vector2( -521, 615 )
 shape = SubResource( 1 )
 
-[node name="StaticBody2D2" type="StaticBody2D" parent="terra"]
+[node name="StaticBody2D2" type="StaticBody2D" parent="Terra"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="terra/StaticBody2D2"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Terra/StaticBody2D2"]
 position = Vector2( 1546, 615 )
 shape = SubResource( 1 )
+
+[node name="Plataformes" type="Node2D" parent="."]
+
+[node name="StaticBody2D2" parent="Plataformes" instance=ExtResource( 5 )]
+position = Vector2( 659, 481 )
+
+[node name="StaticBody2D" parent="Plataformes" instance=ExtResource( 4 )]
+position = Vector2( 691, 481 )
+
+[node name="StaticBody2D3" parent="Plataformes" instance=ExtResource( 5 )]
+position = Vector2( 723, 545 )
+rotation = 3.14159
+
+[node name="StaticBody2D4" parent="Plataformes" instance=ExtResource( 4 )]
+position = Vector2( 691, 545 )
+rotation = 3.14159
+
+[node name="Marges" type="Node2D" parent="."]
+
+[node name="MargeEsquerra" type="StaticBody2D" parent="Marges"]
+
+[node name="Sprite" type="Sprite" parent="Marges/MargeEsquerra"]
+position = Vector2( 42, 296 )
+scale = Vector2( 1.33824, 1.32 )
+texture = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Marges/MargeEsquerra"]
+position = Vector2( -19, 294 )
+shape = SubResource( 2 )
+
+[node name="MargeEsquerra2" type="StaticBody2D" parent="Marges"]
+position = Vector2( 1254, 2 )
+
+[node name="Sprite" type="Sprite" parent="Marges/MargeEsquerra2"]
+position = Vector2( 179, 300 )
+scale = Vector2( 1.33824, 1.32 )
+texture = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Marges/MargeEsquerra2"]
+position = Vector2( 157, 310 )
+shape = SubResource( 2 )
