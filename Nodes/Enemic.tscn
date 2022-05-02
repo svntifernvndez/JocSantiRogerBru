@@ -1,0 +1,96 @@
+[gd_scene load_steps=49 format=2]
+
+[ext_resource path="res://Grafics/_02/01-Idle/__Bandit02_Idle_001.png" type="Texture" id=1]
+[ext_resource path="res://Grafics/_02/01-Idle/__Bandit02_Idle_003.png" type="Texture" id=2]
+[ext_resource path="res://Grafics/_02/01-Idle/__Bandit02_Idle_004.png" type="Texture" id=3]
+[ext_resource path="res://Grafics/_02/01-Idle/__Bandit02_Idle_000.png" type="Texture" id=4]
+[ext_resource path="res://Grafics/_02/01-Idle/__Bandit02_Idle_006.png" type="Texture" id=5]
+[ext_resource path="res://Grafics/_02/01-Idle/__Bandit02_Idle_002.png" type="Texture" id=6]
+[ext_resource path="res://Grafics/_02/01-Idle/__Bandit02_Idle_005.png" type="Texture" id=7]
+[ext_resource path="res://Grafics/_02/02-Walk/__Bandit02_Walk_003.png" type="Texture" id=8]
+[ext_resource path="res://Grafics/_02/03-Attack/__Bandit02_Attack_003.png" type="Texture" id=9]
+[ext_resource path="res://Grafics/_02/01-Idle/__Bandit02_Idle_007.png" type="Texture" id=10]
+[ext_resource path="res://Grafics/_02/01-Idle/__Bandit02_Idle_010.png" type="Texture" id=11]
+[ext_resource path="res://Grafics/_02/01-Idle/__Bandit02_Idle_008.png" type="Texture" id=12]
+[ext_resource path="res://Grafics/_02/02-Walk/__Bandit02_Walk_000.png" type="Texture" id=13]
+[ext_resource path="res://Grafics/_02/02-Walk/__Bandit02_Walk_001.png" type="Texture" id=14]
+[ext_resource path="res://Grafics/_02/02-Walk/__Bandit02_Walk_005.png" type="Texture" id=15]
+[ext_resource path="res://Grafics/_02/01-Idle/__Bandit02_Idle_009.png" type="Texture" id=16]
+[ext_resource path="res://Grafics/_02/02-Walk/__Bandit02_Walk_004.png" type="Texture" id=17]
+[ext_resource path="res://Grafics/_02/02-Walk/__Bandit02_Walk_006.png" type="Texture" id=18]
+[ext_resource path="res://Grafics/_02/02-Walk/__Bandit02_Walk_007.png" type="Texture" id=19]
+[ext_resource path="res://Grafics/_02/03-Attack/__Bandit02_Attack_001.png" type="Texture" id=20]
+[ext_resource path="res://Grafics/_02/02-Walk/__Bandit02_Walk_002.png" type="Texture" id=21]
+[ext_resource path="res://Grafics/_02/03-Attack/__Bandit02_Attack_000.png" type="Texture" id=22]
+[ext_resource path="res://Grafics/_02/03-Attack/__Bandit02_Attack_002.png" type="Texture" id=23]
+[ext_resource path="res://Grafics/_02/01-Idle/__Bandit02_Idle_011.png" type="Texture" id=24]
+[ext_resource path="res://Grafics/_02/05-JumpUp/__Bandit02_JumpUP_006.png" type="Texture" id=25]
+[ext_resource path="res://Grafics/_02/03-Attack/__Bandit02_Attack_004.png" type="Texture" id=26]
+[ext_resource path="res://Grafics/_02/05-JumpUp/__Bandit02_JumpUP_004.png" type="Texture" id=27]
+[ext_resource path="res://Grafics/_02/03-Attack/__Bandit02_Attack_007.png" type="Texture" id=28]
+[ext_resource path="res://Grafics/_02/05-JumpUp/__Bandit02_JumpUP_005.png" type="Texture" id=29]
+[ext_resource path="res://Grafics/_02/03-Attack/__Bandit02_Attack_005.png" type="Texture" id=30]
+[ext_resource path="res://Grafics/_02/05-JumpUp/__Bandit02_JumpUP_000.png" type="Texture" id=31]
+[ext_resource path="res://Grafics/_02/06-FallDown/__Bandit02_FallDown_007.png" type="Texture" id=32]
+[ext_resource path="res://Grafics/_02/05-JumpUp/__Bandit02_JumpUP_002.png" type="Texture" id=33]
+[ext_resource path="res://Grafics/_02/06-FallDown/__Bandit02_FallDown_005.png" type="Texture" id=34]
+[ext_resource path="res://Grafics/_02/06-FallDown/__Bandit02_FallDown_000.png" type="Texture" id=35]
+[ext_resource path="res://Grafics/_02/05-JumpUp/__Bandit02_JumpUP_007.png" type="Texture" id=36]
+[ext_resource path="res://Grafics/_02/06-FallDown/__Bandit02_FallDown_003.png" type="Texture" id=37]
+[ext_resource path="res://Grafics/_02/03-Attack/__Bandit02_Attack_006.png" type="Texture" id=38]
+[ext_resource path="res://Grafics/_02/06-FallDown/__Bandit02_FallDown_004.png" type="Texture" id=39]
+[ext_resource path="res://Grafics/_02/06-FallDown/__Bandit02_FallDown_002.png" type="Texture" id=40]
+[ext_resource path="res://Grafics/_02/05-JumpUp/__Bandit02_JumpUP_001.png" type="Texture" id=41]
+[ext_resource path="res://Grafics/_02/06-FallDown/__Bandit02_FallDown_001.png" type="Texture" id=42]
+[ext_resource path="res://Grafics/_02/06-FallDown/__Bandit02_FallDown_006.png" type="Texture" id=43]
+[ext_resource path="res://Grafics/_02/05-JumpUp/__Bandit02_JumpUP_003.png" type="Texture" id=44]
+[ext_resource path="res://Nodes/Enemic.gd" type="Script" id=45]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 23.5, 44 )
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 4 ), ExtResource( 1 ), ExtResource( 6 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 7 ), ExtResource( 5 ), ExtResource( 10 ), ExtResource( 12 ), ExtResource( 16 ), ExtResource( 11 ), ExtResource( 24 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 13 ), ExtResource( 14 ), ExtResource( 21 ), ExtResource( 8 ), ExtResource( 17 ), ExtResource( 15 ), ExtResource( 18 ), ExtResource( 19 ) ],
+"loop": true,
+"name": "camina",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 31 ), ExtResource( 41 ), ExtResource( 33 ), ExtResource( 44 ), ExtResource( 27 ), ExtResource( 29 ), ExtResource( 25 ), ExtResource( 36 ) ],
+"loop": true,
+"name": "salta",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 35 ), ExtResource( 42 ), ExtResource( 40 ), ExtResource( 37 ), ExtResource( 39 ), ExtResource( 34 ), ExtResource( 43 ), ExtResource( 32 ) ],
+"loop": true,
+"name": "cau",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 22 ), ExtResource( 20 ), ExtResource( 23 ), ExtResource( 9 ), ExtResource( 26 ), ExtResource( 30 ), ExtResource( 38 ), ExtResource( 28 ) ],
+"loop": true,
+"name": "ataca",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 10, 25.75 )
+
+[node name="KinematicBody2D" type="KinematicBody2D"]
+script = ExtResource( 45 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 13.5, -9 )
+shape = SubResource( 1 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+scale = Vector2( 0.25, 0.25 )
+frames = SubResource( 2 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2( -21, -18.75 )
+shape = SubResource( 3 )
