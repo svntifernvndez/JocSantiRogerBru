@@ -43,3 +43,13 @@ func animation(velocitat):
 
 func _on_Area2D_body_entered(body):
 	position = Vector2(15, 184)
+
+
+func _on_Cadenes_pujar_body_entered(body):
+	while is_on_ceiling() == false:
+		velocitat.y = -250
+		
+
+
+func _on_Cadenes_pujar_body_exited(body):
+	velocitat.y = 0
