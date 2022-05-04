@@ -12,7 +12,6 @@ config_version=4
 
 config/name="JocSantiRogerBru"
 run/main_scene="res://Escenes/pantallainici.tscn"
-<<<<<<< HEAD
 
 [importer_defaults]
 
@@ -37,8 +36,6 @@ texture={
 "stream": false,
 "svg/scale": 1.0
 }
-=======
->>>>>>> Roger-2
 
 [input]
 
