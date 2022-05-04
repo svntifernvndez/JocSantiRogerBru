@@ -25,9 +25,13 @@ func animation(velocitat):
 	if velocitat.x > 0 and is_on_floor():
 		$AnimatedSprite.play("corre")
 		$AnimatedSprite.flip_h = false
+		$Esquerra.set_deferred('disabled', false)
+		$Dreta.set_deferred('disabled', true)
 	elif velocitat.x < 0 and is_on_floor():
 		$AnimatedSprite.play("corre")
 		$AnimatedSprite.flip_h = true
+		$Dreta.set_deferred('disabled', false)
+		$Esquerra.set_deferred('disabled', true)
 	if abs(velocitat.x) < 0.1 and is_on_floor():
 		$AnimatedSprite.play("default")
 	if velocitat.y != 0:
