@@ -4,10 +4,11 @@ var velocitat_base = 150
 var velocitat = Vector2.ZERO
 var direccio = Vector2.DOWN
 var gravetat = Vector2.DOWN * 1200
-var velocitat_salt = -400
+var velocitat_salt = -450
+var cadena = false
 
 func _ready():
-	pass
+	print('Hola!')
 
 func _physics_process(delta):
 	velocitat.x = 0
@@ -19,23 +20,31 @@ func _physics_process(delta):
 	if Input.is_action_just_pressed("ui_up") and is_on_floor():
 		velocitat.y = velocitat_salt
 	velocitat = move_and_slide(velocitat, Vector2.UP)
+	if cadena == true:
+		velocitat.y = -100
+		
+		
 	animation(velocitat)
 
 func animation(velocitat):
-	if velocitat.x > 0 and is_on_floor():
-		$AnimatedSprite.play("corre")
-		$AnimatedSprite.flip_h = false
-		$Esquerra.set_deferred('disabled', false)
-		$Dreta.set_deferred('disabled', true)
-	elif velocitat.x < 0 and is_on_floor():
-		$AnimatedSprite.play("corre")
-		$AnimatedSprite.flip_h = true
-		$Dreta.set_deferred('disabled', false)
-		$Esquerra.set_deferred('disabled', true)
-	if abs(velocitat.x) < 0.1 and is_on_floor():
-		$AnimatedSprite.play("default")
-	if velocitat.y != 0:
-		$AnimatedSprite.play("salta")
+	if cadena:
+		$AnimatedSprite.play("escala")
+	else:
+		if velocitat.x > 0 and is_on_floor():
+			$AnimatedSprite.play("corre")
+			$AnimatedSprite.flip_h = false
+			$Esquerra.set_deferred('disabled', false)
+			$Dreta.set_deferred('disabled', true)
+		elif velocitat.x < 0 and is_on_floor():
+			$AnimatedSprite.play("corre")
+			$AnimatedSprite.flip_h = true
+			$Dreta.set_deferred('disabled', false)
+			$Esquerra.set_deferred('disabled', true)
+		if abs(velocitat.x) < 0.1 and is_on_floor():
+			$AnimatedSprite.play("default")
+		if velocitat.y != 0:
+			$AnimatedSprite.play("salta")
+
 
 
 
@@ -46,10 +55,13 @@ func _on_Area2D_body_entered(body):
 
 
 func _on_Cadenes_pujar_body_entered(body):
-	while is_on_ceiling() == false:
-		velocitat.y = -250
-		
+	cadena = true 
 
 
 func _on_Cadenes_pujar_body_exited(body):
-	velocitat.y = 0
+	cadena = false
+	
+
+
+func _on_Spikes_body_entered(body):
+	position = Vector2(15, 184)
