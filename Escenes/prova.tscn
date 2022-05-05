@@ -1,10 +1,13 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Nodes/Personatge.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Nodes/Fons_dia.tscn" type="PackedScene" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 516.5, 17.5 )
+extents = Vector2( 534.5, 3.25 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 82.5, 45 )
 
 [node name="Node2D" type="Node2D"]
 
@@ -19,17 +22,41 @@ scale = Vector2( 4, 4 )
 [node name="StaticBody2D" type="StaticBody2D" parent="terra"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="terra/StaticBody2D"]
-position = Vector2( 512.5, 595.5 )
+position = Vector2( 516, 602 )
+shape = SubResource( 1 )
+
+[node name="StaticBody2D6" type="StaticBody2D" parent="terra"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="terra/StaticBody2D6"]
+position = Vector2( 514, 633 )
 shape = SubResource( 1 )
 
 [node name="StaticBody2D3" type="StaticBody2D" parent="terra"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="terra/StaticBody2D3"]
-position = Vector2( -510, 598 )
+position = Vector2( -5, 242 )
+rotation = 1.5708
 shape = SubResource( 1 )
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="terra"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="terra/StaticBody2D2"]
-position = Vector2( 1546, 596 )
+position = Vector2( 1027, 344 )
+rotation = 1.5708
 shape = SubResource( 1 )
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="terra"]
+position = Vector2( 0, 594 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="terra/StaticBody2D4"]
+position = Vector2( 5, -49 )
+scale = Vector2( 0.2, 0.2 )
+shape = SubResource( 2 )
+
+[node name="StaticBody2D5" type="StaticBody2D" parent="terra"]
+position = Vector2( 1022, 594 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="terra/StaticBody2D5"]
+position = Vector2( -16.5, -89 )
+scale = Vector2( 0.2, 0.2 )
+shape = SubResource( 2 )
