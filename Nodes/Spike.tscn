@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Grafics/spike.png" type="Texture" id=1]
+
+[node name="Area2D" type="Area2D"]
+scale = Vector2( 0.1, 0.1 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( 70, 181, 70, 160, 80, 160, 80, 151, 89, 151, 90, 130, 100, 130, 100, 110, 110, 110, 110, 90, 120, 90, 119, 71, 130, 71, 129, 60, 149, 59, 150, 71, 161, 69, 159, 89, 170, 90, 170, 110, 180, 110, 180, 129, 189, 131, 189, 149, 200, 150, 201, 160, 210, 161, 210, 179 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+texture = ExtResource( 1 )

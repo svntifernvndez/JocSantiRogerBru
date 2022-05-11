@@ -12,23 +12,34 @@ func _ready():
 
 func _physics_process(delta):
 	velocitat.x = 0
-	velocitat += gravetat * delta
+	if not cadena:
+		velocitat += gravetat * delta
+	else:
+		velocitat.y = 0
 	if Input.is_action_pressed("ui_right"):
 		velocitat += Vector2.RIGHT * velocitat_base
 	if Input.is_action_pressed("ui_left"):
 		velocitat += Vector2.LEFT * velocitat_base
 	if Input.is_action_just_pressed("ui_up") and is_on_floor():
 		velocitat.y = velocitat_salt
+
+	if Input.is_action_pressed("ui_up"):
+		if cadena:
+			velocitat.y = -100
+	if Input.is_action_pressed("ui_down"):
+		if cadena:
+			velocitat.y = 100
+	
 	velocitat = move_and_slide(velocitat, Vector2.UP)
-	if cadena == true:
-		velocitat.y = -100
-		
-		
 	animation(velocitat)
 
 func animation(velocitat):
 	if cadena:
-		$AnimatedSprite.play("escala")
+		if velocitat.y == 0:
+			$AnimatedSprite.play("escala2")
+		else:
+			$AnimatedSprite.play("escala")
+		
 	else:
 		if velocitat.x > 0 and is_on_floor():
 			$AnimatedSprite.play("corre")
@@ -54,14 +65,21 @@ func _on_Area2D_body_entered(body):
 	position = Vector2(15, 184)
 
 
-func _on_Cadenes_pujar_body_entered(body):
-	cadena = true 
+func _on_Cadenes_pujar_body_entered(body:Node2D):
+	if body.is_in_group('Personatge'):
+		cadena = true 
+
 
 
 func _on_Cadenes_pujar_body_exited(body):
-	cadena = false
+	if body.is_in_group('Personatge'):
+		cadena = false 
 	
 
 
 func _on_Spikes_body_entered(body):
 	position = Vector2(15, 184)
+
+
+func _on_portal_body_entered(body):
+	pass
