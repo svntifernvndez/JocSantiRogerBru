@@ -6,6 +6,7 @@ var direccio = Vector2.DOWN
 var gravetat = Vector2.DOWN * 1200
 var velocitat_salt = -450
 var cadena = false
+var vides = 5
 
 func _ready():
 	print('Hola!')
@@ -62,17 +63,17 @@ func animation(velocitat):
 
 
 func _on_Area2D_body_entered(body):
-	position = Vector2(15, 184)
+	if body.is_in_group('Personatge'):
+		position = Vector2(15, 184)
+		vides -= 1
 
 
 func _on_Cadenes_pujar_body_entered(body:Node2D):
-	if body.is_in_group('Personatge'):
 		cadena = true 
 
 
 
 func _on_Cadenes_pujar_body_exited(body):
-	if body.is_in_group('Personatge'):
 		cadena = false 
 	
 
@@ -82,4 +83,4 @@ func _on_Spikes_body_entered(body):
 
 
 func _on_portal_body_entered(body):
-	pass
+	get_tree().change_scene('res://Escenes/Nivell 2.tscn')
