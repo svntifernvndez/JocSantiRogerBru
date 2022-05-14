@@ -1,7 +1,8 @@
-[gd_scene load_steps=22 format=2]
+[gd_scene load_steps=23 format=2]
 
 [ext_resource path="res://Grafics/Tiles/tileset.png" type="Texture" id=1]
 [ext_resource path="res://Nodes/Personatge.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Escenes/Nivell 2.gd" type="Script" id=3]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
@@ -779,6 +780,7 @@ points = PoolVector2Array( 15.7331, 0.0923691, 15.5986, 8.84059, 6.312, 8.84059,
 4/z_index = 0
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource( 3 )
 
 [node name="TileMap" type="TileMap" parent="."]
 scale = Vector2( 2, 2 )
@@ -795,5 +797,5 @@ cell_custom_transform = Transform2D( 16, 0, 0, 16, 0, 0 )
 format = 1
 tile_data = PoolIntArray( 852015, 2, 0 )
 
-[node name="KinematicBody2D" parent="." instance=ExtResource( 2 )]
+[node name="Personatge" parent="." instance=ExtResource( 2 )]
 position = Vector2( 31, 368 )
