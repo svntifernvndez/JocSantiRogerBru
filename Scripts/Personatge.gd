@@ -7,6 +7,7 @@ var gravetat = Vector2.DOWN * 1200
 var velocitat_salt = -450
 var cadena = false
 var vides = 5
+var mor = false
 
 func _ready():
 	pass
@@ -64,7 +65,7 @@ func animation(velocitat):
 
 func _on_Area2D_body_entered(body):
 	if body.is_in_group('Personatge'):
-		position = Vector2(33, 368)
+		mor = true
 		vides -= 1
 
 
@@ -79,9 +80,8 @@ func _on_Cadenes_pujar_body_exited(body):
 	
 
 
-func _on_Spikes_body_entered(body):
-	position = Vector2(15, 184)
-
-
 func _on_portal_body_entered(body):
 	get_tree().change_scene('res://Escenes/Nivell 2.tscn')
+
+
+

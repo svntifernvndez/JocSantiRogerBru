@@ -8,7 +8,7 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	$Personatge.vides = 5
 
 
 func _process(delta):
@@ -24,6 +24,6 @@ func _process(delta):
 		$Vida.visible = false
 		get_tree().change_scene('res://Escenes/No_vides.tscn')
 	if $Personatge.mor == true:
-		$Personatge.position = Vector2(35, 364)
+		$Personatge.position = Vector2(129, 45)
 		$Personatge.vides -= 1
 		$Personatge.mor = false
