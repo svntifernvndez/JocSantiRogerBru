@@ -6,7 +6,7 @@ var direccio = Vector2.DOWN
 var gravetat = Vector2.DOWN * 1200
 var velocitat_salt = -450
 var cadena = false
-var vides = 5
+var vides = 3
 var mor = false
 
 func _ready():
@@ -60,23 +60,14 @@ func animation(velocitat):
 
 
 
-
-
-
-func _on_Area2D_body_entered(body):
-	if body.is_in_group('Personatge'):
-		mor = true
-		vides -= 1
-
-
 func _on_Cadenes_pujar_body_entered(body:Node2D):
-		if body.is_in_group('Personatge'):
+	if body.is_in_group('Personatge'):
 			cadena = true 
 
 
 
 func _on_Cadenes_pujar_body_exited(body):
-		cadena = false 
+	cadena = false 
 	
 
 
@@ -85,3 +76,9 @@ func _on_portal_body_entered(body):
 
 
 
+
+
+func _on_Mort_body_entered(body):
+	if body.is_in_group('Personatge'):
+		mor = true
+		

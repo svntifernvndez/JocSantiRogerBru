@@ -147,8 +147,8 @@ points = PoolVector2Array( 15.5119, 0.228683, 15.1081, 15.9755, 6.89824, 15.4371
 [sub_resource type="ConvexPolygonShape2D" id=66]
 points = PoolVector2Array( 10.0964, 0.244648, 10.0964, 8.31992, 15.7491, 8.18534, 15.8837, 16, 0.136909, 15.3185, 0.2715, 0.37923 )
 
-[sub_resource type="ConvexPolygonShape2D" id=67]
-points = PoolVector2Array( 0.0890198, 0.226959, 15.432, 0.49614, 15.7012, 14.897, 7.22218, 15.3008, 6.41465, 8.30224, 0.492783, 8.43682 )
+[sub_resource type="ConvexPolygonShape2D" id=69]
+points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 
 [sub_resource type="ConvexPolygonShape2D" id=68]
 points = PoolVector2Array( 15.7331, 0.0923691, 15.5986, 8.84059, 6.312, 8.84059, 6.04282, 15.8392, 0.255539, 15.0316, 0.255539, 0.226959 )
@@ -290,14 +290,14 @@ points = PoolVector2Array( 15.7331, 0.0923691, 15.5986, 8.84059, 6.312, 8.84059,
 7/navigation_offset = Vector2( 0, 0 )
 7/shape_offset = Vector2( 0, 0 )
 7/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-7/shape = SubResource( 67 )
+7/shape = SubResource( 69 )
 7/shape_one_way = false
 7/shape_one_way_margin = 1.0
 7/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 67 ),
+"shape": SubResource( 69 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 7/z_index = 0
@@ -897,6 +897,12 @@ polygon = PoolVector2Array( 16.5, 128.5, 23.5, 132.5, 16.5, 136, 23, 141, 16.5, 
 position = Vector2( 51.6875, 80.0625 )
 shape = SubResource( 48 )
 
+[node name="CollisionPolygon2D5" type="CollisionPolygon2D" parent="TileMap/Mort"]
+polygon = PoolVector2Array( 320, 271, 312.5, 268.5, 320, 264.5, 312.5, 260.5, 319.5, 257.5 )
+
+[node name="CollisionPolygon2D6" type="CollisionPolygon2D" parent="TileMap/Mort"]
+polygon = PoolVector2Array( 368, 32, 384, 32, 380.5, 40, 376.5, 32, 372.5, 40 )
+
 [node name="Cadenes_pujar" type="Area2D" parent="TileMap"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TileMap/Cadenes_pujar"]
@@ -919,11 +925,6 @@ texture = ExtResource( 3 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="portal"]
 shape = SubResource( 47 )
 
-[node name="Vida" type="Sprite" parent="."]
-position = Vector2( 145, 43 )
-scale = Vector2( 0.03, 0.03 )
-texture = ExtResource( 5 )
-
 [node name="Vida2" type="Sprite" parent="."]
 position = Vector2( 120, 43 )
 scale = Vector2( 0.03, 0.03 )
@@ -939,11 +940,6 @@ position = Vector2( 70, 43 )
 scale = Vector2( 0.03, 0.03 )
 texture = ExtResource( 5 )
 
-[node name="Vida5" type="Sprite" parent="."]
-position = Vector2( 45, 43 )
-scale = Vector2( 0.03, 0.03 )
-texture = ExtResource( 5 )
-
 [node name="Personatge" parent="." instance=ExtResource( 2 )]
 position = Vector2( 35, 364 )
 
@@ -952,7 +948,7 @@ position = Vector2( 115, 18 )
 scale = Vector2( 0.4, 0.4 )
 texture = ExtResource( 6 )
 
-[connection signal="body_entered" from="TileMap/Mort" to="Personatge" method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="TileMap/Mort" to="Personatge" method="_on_Mort_body_entered"]
 [connection signal="body_entered" from="TileMap/Cadenes_pujar" to="Personatge" method="_on_Cadenes_pujar_body_entered"]
 [connection signal="body_exited" from="TileMap/Cadenes_pujar" to="Personatge" method="_on_Cadenes_pujar_body_exited"]
 [connection signal="body_entered" from="portal" to="Personatge" method="_on_portal_body_entered"]

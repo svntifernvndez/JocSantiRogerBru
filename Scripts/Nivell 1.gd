@@ -12,16 +12,12 @@ func _ready():
 
 
 func _process(delta):
-	if $Personatge.vides < 5:
-		$Vida5.visible = false
-	if $Personatge.vides < 4:
-		$Vida4.visible = false
 	if $Personatge.vides < 3:
-		$Vida3.visible = false
+		$Vida4.visible = false
 	if $Personatge.vides < 2:
-		$Vida2.visible = false
+		$Vida3.visible = false
 	if $Personatge.vides < 1:
-		$Vida.visible = false
+		$Vida2.visible = false
 		get_tree().change_scene('res://Escenes/No_vides.tscn')
 	if $Personatge.mor == true:
 		$Personatge.position = Vector2(35, 364)
