@@ -82,3 +82,7 @@ func _on_Mort_body_entered(body):
 	if body.is_in_group('Personatge'):
 		mor = true
 		
+
+
+func _on_Area2D_body_entered(body):
+	get_tree().change_scene('res://Escenes/Escena final.tscn')

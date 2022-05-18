@@ -18,7 +18,7 @@ func _process(delta):
 		$Vida3.visible = false
 	if $Personatge.vides < 1:
 		$Vida2.visible = false
-		get_tree().change_scene('res://Escenes/No_vides.tscn')
+		get_tree().change_scene('res://Escenes/novides.tscn')
 	if $Personatge.mor == true:
 		$Personatge.position = Vector2(129, 45)
 		$Personatge.vides -= 1
