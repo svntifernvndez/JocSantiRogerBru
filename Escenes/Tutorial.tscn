@@ -8,7 +8,6 @@
 [ext_resource path="res://Grafics/image-removebg-preview (4).png" type="Texture" id=7]
 [ext_resource path="res://Grafics/image-removebg-preview (5).png" type="Texture" id=8]
 
-
 [sub_resource type="TileSet" id=52]
 0/name = "tileset.png 0"
 0/texture = ExtResource( 1 )
