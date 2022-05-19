@@ -73,11 +73,3 @@ func _on_Cadenes_pujar_body_entered(body):
 
 func _on_Cadenes_pujar_body_exited(body):
 	cadena = false
-
-
-func _on_Cadenes_body_entered(body):
-	cadena = true
-
-
-func _on_Cadenes_body_exited(body):
-	cadena = false
