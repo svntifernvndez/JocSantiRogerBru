@@ -9,6 +9,7 @@ extends Node2D
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	$Personatge.vides = 3
+	print($Personatge.monedes)
 
 
 func _process(delta):
@@ -23,3 +24,7 @@ func _process(delta):
 		$Personatge.position = Vector2(129, 45)
 		$Personatge.vides -= 1
 		$Personatge.mor = false
+
+
+func _on_Personatge_mes_monedes(monedes):
+	$Label.text = "Monedes: " + str(monedes)

@@ -13,6 +13,10 @@ config_version=4
 config/name="JocSantiRogerBru"
 run/main_scene="res://Escenes/pantallainici.tscn"
 
+[autoload]
+
+Global="*res://Global.gd"
+
 [importer_defaults]
 
 texture={

@@ -8,9 +8,17 @@ var velocitat_salt = -450
 var cadena = false
 var vides = 3
 var mor = false
+var monedes = 0 setget canvia_monedes
+
+signal mes_monedes(monedes)
+
+func canvia_monedes(noves_monedes):
+	monedes = noves_monedes
+	Global.monedes = monedes
+	emit_signal("mes_monedes", monedes)
 
 func _ready():
-	pass
+	self.monedes = Global.monedes
 
 func _physics_process(delta):
 	velocitat.x = 0
