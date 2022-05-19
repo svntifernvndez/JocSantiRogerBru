@@ -23,3 +23,10 @@ func _process(delta):
 		$Personatge.position = Vector2(35, 364)
 		$Personatge.vides -= 1
 		$Personatge.mor = false
+
+
+ 
+
+
+func _on_Personatge_mes_monedes(monedes):
+	$Label.text = "Monedes: " + str(monedes)
