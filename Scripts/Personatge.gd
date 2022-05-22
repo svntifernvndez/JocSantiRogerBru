@@ -10,15 +10,19 @@ var vides = 3
 var mor = false
 var monedes = 0 setget canvia_monedes
 
+
 signal mes_monedes(monedes)
+
 
 func canvia_monedes(noves_monedes):
 	monedes = noves_monedes
 	Global.monedes = monedes
 	emit_signal("mes_monedes", monedes)
 
+
 func _ready():
 	self.monedes = Global.monedes
+
 
 func _physics_process(delta):
 	velocitat.x = 0
@@ -32,16 +36,17 @@ func _physics_process(delta):
 		velocitat += Vector2.LEFT * velocitat_base
 	if Input.is_action_just_pressed("ui_up") and is_on_floor():
 		velocitat.y = velocitat_salt
-
+		$salt.play()
 	if Input.is_action_pressed("ui_up"):
 		if cadena:
 			velocitat.y = -100
 	if Input.is_action_pressed("ui_down"):
 		if cadena:
 			velocitat.y = 100
-	
+
 	velocitat = move_and_slide(velocitat, Vector2.UP)
 	animation(velocitat)
+
 
 func animation(velocitat):
 	if cadena:
@@ -67,30 +72,24 @@ func animation(velocitat):
 			$AnimatedSprite.play("salta")
 
 
-
 func _on_Cadenes_pujar_body_entered(body:Node2D):
 	if body.is_in_group('Personatge'):
 			cadena = true 
 
 
-
 func _on_Cadenes_pujar_body_exited(body):
 	cadena = false 
-	
 
 
 func _on_portal_body_entered(body):
 	get_tree().change_scene('res://Escenes/Nivell 2.tscn')
 
 
-
-
-
 func _on_Mort_body_entered(body):
 	if body.is_in_group('Personatge'):
 		mor = true
-		
 
 
 func _on_Area2D_body_entered(body):
 	get_tree().change_scene('res://Escenes/Escena final.tscn')
+

@@ -1,10 +1,11 @@
-[gd_scene load_steps=28 format=2]
+[gd_scene load_steps=29 format=2]
 
 [ext_resource path="res://Scripts/sensevides.gd" type="Script" id=1]
 [ext_resource path="res://Grafics/Tiles/tileset.png" type="Texture" id=2]
 [ext_resource path="res://Nodes/Personatgetutorial.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Grafics/thas quedat sense vides.png" type="Texture" id=4]
 [ext_resource path="res://Grafics/pulsa R.png" type="Texture" id=5]
+[ext_resource path="res://Nodes/gameover.gd" type="Script" id=6]
 
 [sub_resource type="TileSet" id=52]
 0/name = "tileset.png 0"
@@ -867,3 +868,6 @@ texture = ExtResource( 5 )
 
 [node name="KinematicBody2D" parent="." instance=ExtResource( 3 )]
 position = Vector2( 469, 297 )
+
+[node name="gameover" type="AudioStreamPlayer" parent="."]
+script = ExtResource( 6 )

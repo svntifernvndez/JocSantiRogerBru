@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Moneda.wav-5541f8f75b78b77e0d77968b857b1dd4.sample"
+
+[deps]
+
+source_file="res://Grafics/Moneda.wav"
+dest_files=[ "res://.import/Moneda.wav-5541f8f75b78b77e0d77968b857b1dd4.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

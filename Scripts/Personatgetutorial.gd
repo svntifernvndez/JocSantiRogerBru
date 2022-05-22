@@ -23,6 +23,7 @@ func _physics_process(delta):
 		velocitat += Vector2.LEFT * velocitat_base
 	if Input.is_action_just_pressed("ui_up") and is_on_floor():
 		velocitat.y = velocitat_salt
+		$salt.play()
 
 	if Input.is_action_pressed("ui_up"):
 		if cadena:
@@ -56,10 +57,7 @@ func animation(velocitat):
 			$AnimatedSprite.play("default")
 		if velocitat.y != 0:
 			$AnimatedSprite.play("salta")
-		
-		
-		
-#links:
+
 
 
 func _on_Mort_body_entered(body):

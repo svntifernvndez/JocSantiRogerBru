@@ -1,4 +1,4 @@
-[gd_scene load_steps=38 format=2]
+[gd_scene load_steps=40 format=2]
 
 [ext_resource path="res://Grafics/Tiles/tileset.png" type="Texture" id=1]
 [ext_resource path="res://Nodes/Personatge.tscn" type="PackedScene" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://Grafics/vides_restants-removebg-preview.png" type="Texture" id=6]
 [ext_resource path="res://Nodes/moneda.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Grafics/_02/Retro Gaming.ttf" type="DynamicFontData" id=8]
+[ext_resource path="res://Escenes/monedes.gd" type="Script" id=9]
 
 [sub_resource type="TileSet" id=29]
 0/name = "tileset.png 0"
@@ -864,6 +865,24 @@ font_data = ExtResource( 8 )
 [sub_resource type="Theme" id=72]
 default_font = SubResource( 73 )
 
+[sub_resource type="GDScript" id=74]
+script/source = "extends AudioStreamPlayer
+
+
+# Declare member variables here. Examples:
+# var a = 2
+# var b = \"text\"
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	var audioStream: AudioStream = preload('res://Grafics/Melodia.mp3')
+	self.set_stream(audioStream)
+	self.set_volume_db(-15)
+	self.play()
+	
+"
+
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 4 )
 
@@ -980,6 +999,12 @@ margin_bottom = 32.0
 rect_scale = Vector2( 1.8, 1.8 )
 theme = SubResource( 72 )
 text = "Monedes: "
+
+[node name="melodia" type="AudioStreamPlayer" parent="."]
+script = SubResource( 74 )
+
+[node name="monedes" type="AudioStreamPlayer" parent="."]
+script = ExtResource( 9 )
 
 [connection signal="body_entered" from="TileMap/Mort" to="Personatge" method="_on_Mort_body_entered"]
 [connection signal="body_entered" from="TileMap/Cadenes_pujar" to="Personatge" method="_on_Cadenes_pujar_body_entered"]

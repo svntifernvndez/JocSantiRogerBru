@@ -1,4 +1,4 @@
-extends Node2D
+extends AudioStreamPlayer2D
 
 
 # Declare member variables here. Examples:
@@ -8,10 +8,9 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	$gameover.play()
+	pass # Replace with function body.
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	if Input.is_action_pressed("R"):
-		get_tree().change_scene("res://Escenes/pantallainici.tscn")
+#func _process(delta):
+#	pass

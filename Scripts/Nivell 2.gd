@@ -28,3 +28,4 @@ func _process(delta):
 
 func _on_Personatge_mes_monedes(monedes):
 	$Label.text = "Monedes: " + str(monedes)
+	$moneda.play()
