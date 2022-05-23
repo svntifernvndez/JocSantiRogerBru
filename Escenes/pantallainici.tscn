@@ -24,10 +24,10 @@ shape = SubResource( 1 )
 position = Vector2( 356, 397 )
 
 [node name="TextureButton" type="TextureButton" parent="."]
-margin_left = 385.0
-margin_top = 245.0
-margin_right = 639.0
-margin_bottom = 355.0
+margin_left = 333.0
+margin_top = 246.0
+margin_right = 587.0
+margin_bottom = 356.0
 rect_scale = Vector2( 1.4, 1.4 )
 texture_normal = ExtResource( 3 )
 texture_pressed = ExtResource( 3 )
