@@ -21,6 +21,7 @@ func _process(delta):
 		get_tree().change_scene('res://Escenes/novides.tscn')
 	if $Personatge.mor == true:
 		$Personatge.position = Vector2(35, 364)
+		$mort.play()
 		$Personatge.vides -= 1
 		$Personatge.mor = false
 
