@@ -42,8 +42,10 @@ func animation(velocitat):
 
 
 
+
 func _on_Timer_timeout():
 	velocitat.y = velocitat_salt
+	$salt.play()
 
 
 func _on_Area2D2_body_entered(body):

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/map-1.png-743fe7efd242059f0e8dff8e8b2987b5.stex"
+path="res://.import/image-removebg-preview (6).png-b9c93c150896708754d0385a0f03de54.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Grafics/Tiles/map-1.png"
-dest_files=[ "res://.import/map-1.png-743fe7efd242059f0e8dff8e8b2987b5.stex" ]
+source_file="res://Grafics/image-removebg-preview (6).png"
+dest_files=[ "res://.import/image-removebg-preview (6).png-b9c93c150896708754d0385a0f03de54.stex" ]
 
 [params]
 

@@ -8,18 +8,10 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	$gameover.play()
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
-
-
-
-
-
-
-
-func _on_TextureButton_pressed():
-	get_tree().change_scene("res://Escenes/Tutorial.tscn")
+func _process(delta):
+	if Input.is_action_pressed("R"):
+		get_tree().change_scene("res://Escenes/pantallainici.tscn")

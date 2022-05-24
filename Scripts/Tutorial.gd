@@ -12,14 +12,8 @@ func _ready():
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func _process(delta):
+	if Input.is_action_pressed("R"):
+		get_tree().change_scene("res://Escenes/Nivell 1.tscn")
 
-
-
-
-
-
-
-func _on_TextureButton_pressed():
-	get_tree().change_scene("res://Escenes/Tutorial.tscn")
+		

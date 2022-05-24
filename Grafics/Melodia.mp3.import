@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Melodia.mp3-2fa8369dfc599079e1dd37849e63fed1.mp3str"
+
+[deps]
+
+source_file="res://Grafics/Melodia.mp3"
+dest_files=[ "res://.import/Melodia.mp3-2fa8369dfc599079e1dd37849e63fed1.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

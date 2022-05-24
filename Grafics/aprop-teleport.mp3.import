@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/aprop-teleport.mp3-c8f868bee9fdcbf498028e955841c1b3.mp3str"
+
+[deps]
+
+source_file="res://Grafics/aprop-teleport.mp3"
+dest_files=[ "res://.import/aprop-teleport.mp3-c8f868bee9fdcbf498028e955841c1b3.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

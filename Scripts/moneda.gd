@@ -1,4 +1,4 @@
-extends Node2D
+extends Area2D
 
 
 # Declare member variables here. Examples:
@@ -16,10 +16,7 @@ func _ready():
 #	pass
 
 
-
-
-
-
-
-func _on_TextureButton_pressed():
-	get_tree().change_scene("res://Escenes/Tutorial.tscn")
+func _on_Moneda_body_entered(body):
+	if body.is_in_group('Personatge'):
+		body.monedes += 1
+		queue_free()

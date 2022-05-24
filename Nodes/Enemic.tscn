@@ -44,7 +44,8 @@
 [ext_resource path="res://Grafics/_02/06-FallDown/__Bandit02_FallDown_001.png" type="Texture" id=42]
 [ext_resource path="res://Grafics/_02/06-FallDown/__Bandit02_FallDown_006.png" type="Texture" id=43]
 [ext_resource path="res://Grafics/_02/05-JumpUp/__Bandit02_JumpUP_003.png" type="Texture" id=44]
-[ext_resource path="res://Nodes/Enemic.gd" type="Script" id=45]
+[ext_resource path="res://Scripts/Enemic.gd" type="Script" id=45]
+
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 23.5, 44 )
