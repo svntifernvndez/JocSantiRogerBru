@@ -103,8 +103,8 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 [sub_resource type="ConvexPolygonShape2D" id=50]
 points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 
-[sub_resource type="ConvexPolygonShape2D" id=51]
-points = PoolVector2Array( 0.529594, 15.0166, 0.335793, 0, 15.4527, 0.0935287, 15.8403, 6.29534, 9.05709, 6.87676 )
+[sub_resource type="ConvexPolygonShape2D" id=75]
+points = PoolVector2Array( 0, 16, 0, 0, 16, 0, 15.9922, 6.23691, 8.20354, 7.4052 )
 
 [sub_resource type="ConvexPolygonShape2D" id=52]
 points = PoolVector2Array( 15.8403, 0.760895, 15.2589, 15.684, 6.92521, 6.7689, 0.141975, 5.99368, 0.141975, 0.373283 )
@@ -350,14 +350,14 @@ points = PoolVector2Array( 15.7331, 0.0923691, 15.5986, 8.84059, 6.312, 8.84059,
 10/navigation_offset = Vector2( 0, 0 )
 10/shape_offset = Vector2( 0, 0 )
 10/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-10/shape = SubResource( 51 )
+10/shape = SubResource( 75 )
 10/shape_one_way = false
 10/shape_one_way_margin = 1.0
 10/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 51 ),
+"shape": SubResource( 75 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 10/z_index = 0
@@ -927,6 +927,12 @@ shape = SubResource( 48 )
 
 [node name="CollisionPolygon2D6" type="CollisionPolygon2D" parent="TileMap/Mort"]
 polygon = PoolVector2Array( 368, 32, 384, 32, 380.5, 40, 376.5, 32, 372.5, 40 )
+
+[node name="CollisionPolygon2D5" type="CollisionPolygon2D" parent="TileMap/Mort"]
+polygon = PoolVector2Array( 415.5, 225.5, 409.5, 228.5, 416, 232, 410, 236.5, 416, 239.5 )
+
+[node name="CollisionPolygon2D7" type="CollisionPolygon2D" parent="TileMap/Mort"]
+polygon = PoolVector2Array( 449.5, 224.5, 452.5, 230.5, 455.5, 224, 461, 231, 463.5, 224 )
 
 [node name="Cadenes_pujar" type="Area2D" parent="TileMap"]
 
