@@ -952,6 +952,14 @@ polygon = PoolVector2Array( 416, 128, 446, 128, 440, 142, 431, 129, 423, 143, 41
 [node name="CollisionPolygon2D12" type="CollisionPolygon2D" parent="Mort"]
 polygon = PoolVector2Array( 626, 142, 623, 147, 618, 150, 608, 160, 614, 174, 622, 160, 631, 173, 654, 154, 638, 144, 654, 139, 637, 140, 629, 141 )
 
+[node name="CollisionPolygon2D13" type="CollisionPolygon2D" parent="Mort"]
+polygon = PoolVector2Array( 799, 324, 786, 329, 800, 336, 785, 344, 800, 352, 808, 336 )
+
+[node name="CollisionPolygon2D14" type="CollisionPolygon2D" parent="Mort"]
+position = Vector2( 1666, 49 )
+scale = Vector2( -1, 0.854 )
+polygon = PoolVector2Array( 801, 323.185, 786, 329, 800, 336, 785, 344, 800, 352, 808, 336 )
+
 [node name="Cadenes_pujar" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Cadenes_pujar"]

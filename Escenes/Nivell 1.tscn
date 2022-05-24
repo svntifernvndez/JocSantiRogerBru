@@ -928,6 +928,9 @@ shape = SubResource( 48 )
 [node name="CollisionPolygon2D6" type="CollisionPolygon2D" parent="TileMap/Mort"]
 polygon = PoolVector2Array( 368, 32, 384, 32, 380.5, 40, 376.5, 32, 372.5, 40 )
 
+[node name="CollisionPolygon2D5" type="CollisionPolygon2D" parent="TileMap/Mort"]
+polygon = PoolVector2Array( 416, 227, 409.5, 228.5, 415.5, 232, 409, 236, 415, 239.5, 422, 232.5 )
+
 [node name="Cadenes_pujar" type="Area2D" parent="TileMap"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TileMap/Cadenes_pujar"]
